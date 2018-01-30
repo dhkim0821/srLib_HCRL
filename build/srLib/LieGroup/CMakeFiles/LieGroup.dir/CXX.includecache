@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../srLib/common/types.h
+
+/Users/donghyunkim/new_srLib/srLib/LieGroup/LieGroup.cpp
+iomanip
+-
+LieGroup.h
+/Users/donghyunkim/new_srLib/srLib/LieGroup/LieGroup.h
+
+/Users/donghyunkim/new_srLib/srLib/LieGroup/LieGroup.h
+math.h
+-
+assert.h
+-
+iostream
+-
+float.h
+-
+common/types.h
+/Users/donghyunkim/new_srLib/srLib/LieGroup/common/types.h
+LieGroup.inl
+/Users/donghyunkim/new_srLib/srLib/LieGroup/LieGroup.inl
+
+/Users/donghyunkim/new_srLib/srLib/LieGroup/LieGroup.inl
+

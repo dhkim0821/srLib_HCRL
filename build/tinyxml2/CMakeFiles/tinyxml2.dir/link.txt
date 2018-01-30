@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -std=c++1z -O3 -DNDEBUG -dynamiclib -Wl,-headerpad_max_install_names  -o libtinyxml2.dylib -install_name @rpath/libtinyxml2.dylib CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o 

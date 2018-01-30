@@ -1,0 +1,10 @@
+FILE(GLOB_RECURSE headers *.h)
+FILE(GLOB_RECURSE sources *.cpp)
+
+add_library (SceneGraph SHARED ${headers} ${sources})
+target_link_libraries(SceneGraph ${OPENGL_LIBRARIES})
+target_link_libraries(SceneGraph ${GLUT_LIBRARY})
+message(${OSG_LIBRARIES})
+message(${GLUT_LIBRARY})
+target_link_libraries(SceneGraph ${OSG_LIBRARIES})
+target_link_libraries(SceneGraph common)
