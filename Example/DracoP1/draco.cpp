@@ -119,7 +119,7 @@ void srDraco::_SetInitialConf(){
   KIN_UpdateFrame_All_The_Entity();
 }
 
-//#define NO_3D_CAD
+#define NO_3D_CAD
 
 void srDraco::_DefineLinks(){
   Inertia dummy = Inertia(0.0);
@@ -131,8 +131,8 @@ void srDraco::_DefineLinks(){
 
   link_[idx]->GetGeomInfo().SetShape(srGeometryInfo::STL);
   //link_[idx]->GetGeomInfo().SetFileName(ModelPath"meshes/supportStructure_base.3ds");
-  //link_[idx]->GetGeomInfo().SetFileName("/Users/donghyunkim/new_srLib/Example/DracoP1/DracoP1_Model/meshes/test.STL");
-  //link_[idx]->GetGeomInfo().SetLocalFrame(EulerZYX(Vec3(SR_PI_HALF,0., SR_PI),Vec3(-0.5,-0.4,-0.06)));
+  link_[idx]->GetGeomInfo().SetFileName("/Users/donghyunkim/new_srLib/Example/DracoP1/DracoP1_Model/meshes/test.STL");
+  link_[idx]->GetGeomInfo().SetLocalFrame(EulerZYX(Vec3(SR_PI_HALF,0., SR_PI),Vec3(-0.5,-0.4,-0.06)));
 
 #ifndef NO_3D_CAD 
   link_[idx]->GetGeomInfo().SetShape(srGeometryInfo::TDS);

@@ -388,13 +388,13 @@ class STLNode : public Leaf
 public:
 	STLNode(const char* name, SE3 T = SE3(0.0))
 	{
-		//m_Model = new ModelSTL();
+        m_Model = new ModelSTL;   
 		strcpy(m_name, name);
-        m_Model = new ModelSTL(m_name);
+        //m_Model = new ModelSTL(m_name);
 		localFrame = T;
 		//strcpy_s(m_name, name);
-        //printf("in stl node: %s\n", m_name);
-		//m_Model->Load(m_name);
+        printf("in stl node: %s\n", m_name);
+        m_Model->Load(m_name);
 	}
 	~STLNode()
 	{

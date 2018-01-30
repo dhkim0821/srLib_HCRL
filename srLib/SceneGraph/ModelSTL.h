@@ -14,7 +14,7 @@ private:
     //list<srSTL::facet> stl_content;
 
 public:
-    ModelSTL(){ m_stl_content.clear(); }
+    ModelSTL(void){ m_stl_content.clear(); }
     ModelSTL(string name){
     Load(name);
     }

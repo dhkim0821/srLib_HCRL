@@ -8,7 +8,7 @@ set(CMAKE_CXX_FLAGS "-std=c++1z")
 set (CMAKE_BUILD_TYPE Debug)
 set (CMAKE_BUILD_TYPE Release)
 add_definitions(-O3)
-add_definitions(-D_MAX_PATH=20)
+add_definitions(-D_MAX_PATH=100)
 
 find_package(OpenGL REQUIRED)
 include_directories(${OPENGL_INCLUDE_DIR})

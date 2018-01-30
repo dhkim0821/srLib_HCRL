@@ -11,7 +11,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "_MAX_PATH=20"
+  "_MAX_PATH=100"
   )
 
 # The include file search paths:
